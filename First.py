@@ -16,7 +16,20 @@ class linkedlist:
             print(temp.data)
             temp=temp.next
     
-
+    def modo(self):
+        temp=self.head
+        prev=self.head
+        curr=self.head
+        n_e=self.head
+        while(curr.next):
+            #curr=prev.next
+            n_e=curr.next
+            curr.next=prev
+            prev=curr
+            curr=n_e
+        curr.next=prev
+        self.head=curr
+        temp.next=None
 
 
 if __name__=='__main__':
