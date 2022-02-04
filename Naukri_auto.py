@@ -19,6 +19,6 @@ button = driver.find_element_by_xpath("/html/body/div[2]/div/div/div/div/div/div
 time.sleep(3)
 driver.get("https://www.naukri.com/mnjuser/profile?id=&altresid")
 
-#time.sleep(3)
-#a= driver.find_element_by_id("attachCV")
-#a.send_keys("C:\\Users\shari\Desktop\Sharique DE 1 year.pdf")
+time.sleep(3)
+a= driver.find_element_by_id("attachCV")
+a.send_keys("C:\\Users\shari\Desktop\Sharique DE 1 year.pdf")
